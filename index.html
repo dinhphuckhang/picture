@@ -1,116 +1,56 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Phong Bì Tương Tác</title>
-</head>
-<body>
-    <article>
-        <div class="envelope-container">
-            <!-- Tin nhắn đầu tiên -->
-            <div class="message message-1" id="message-1">
-                <h1>Anh xin lỗi em nhé</h1>
-                <p>Có quà cho em nè, bấm vào hình trái tim nhé <3 </p>
-            </div>
-            <!-- Tin nhắn thứ hai -->
-            <div class="message message-2" id="message-2">
-                <h2>Anh yêu em nhiều lắm!</h2>
-                 <p>Em có 1 cuộc hẹn bấm vào link dưới nha </p>
-            </div>
-            <!-- Nút đóng phong bì -->
-            <button class="close-btn" id="close-btn" onclick="toggleEnvelope()">Đóng phong bì</button>
-            <!-- Nút trái tim -->
-            <button class="heart-btn" id="heart-btn" onclick="toggleEnvelope()">&#10084; 
-                <span class="heart-btn-text">Bấm đây nè</span>
-            </button>
-            <div class="envelope-flap">
-                <svg class="inner">
-                    <polygon class="inner-polygon" id="inner-polygon" points="5,0 345,0 175,145"></polygon>
-                </svg>
-                <svg class="outer" id="outer">
-                    <polygon class="outer-polygon" points="5,150 345,150 175,0"></polygon>
-                </svg>
-                <div class="floating-hearts">
-                    <div class="hearts-row row-10">
-                        <div>
-                            <i class="ri-heart-fill"></i>
-                        </div>
-                    </div>
-                    <div class="hearts-row row-9">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-8">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-7">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-6">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-5">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-4">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-3">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-2">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-1">
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                </div>
-            </div>
-            <div class="envelope-base"></div>
-        </div>
-    </article>
-    <script src="script.js"></script>
-</body>
+<html lang="vi" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>gift 20/10 for you</title>
+		<link rel="shortcut icon" href="./rose.png">
+		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-1 loading">
+		<main>
+			<div class="message">Please view this demo on a desktop to see the effect.</div>
+			<div class="frame">
+			</div>
+			<div class="content">
+				<div class="grid">
+					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/yn1.jpg?v=1646398133516);" class="hover" ></div></div>
+					<div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/yennhi.jpg?v=1646392089473);" class="hover"></div></div>
+					<div class="grid__item pos-4"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/yn2.jpg?v=1646398142798);" class="hover"></div></div>
+					<div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/yn3.jpg?v=1646398146065);" class="hover"></div></div>
+					<div class="grid__item pos-5"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/yn4.jpg?v=1646398157493;" class="hover"></div></div>
+					<div class="grid__item pos-6"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/YN5.jpg?v=1646481987083);" class="hover"></div></div>
+					<div class="grid__item pos-7"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/YN6.jpg?v=1646482004146);" class="hover"></div></div>
+					<div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/YN7.jpg?v=1646482004832);" class="hover"></div></div>
+					<div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/yn8.jpg?v=1646482015016);" class="hover"></div></div>
+					<div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/yn9.jpg?v=1646482015856);" class="hover"></div></div>
+				</div>
+                <h2 class="content__title no-select">
+					<span>Chúc Mừng 20/10</span>
+				</h2>
+				<h2 class="content__title no-select">
+					<span class="content__title-sub">Chúc bé của anh 20/10 vui vẻ ngày càng xinh đẹp nhokkk</span>
+				</h2>
+			</div>
+		</main>
+        <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+		</svg>
+		<script src="./script.js"></script>
+    <div>
+    <audio control autoplay>
+   <source src="https://cdn.glitch.global/207bc6dd-daa8-4ac6-8f12-9d5d8882dfce/NgayDauTien-DucPhuc-7129810.mp3?v=1646482397837" type="audio/mpeg">
+  </audio>
+    </div>
+	</body>
 </html>
